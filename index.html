@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/introduction.css">
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- IMPORT FONT -->
+    <link href="http://fonts.cdnfonts.com/css/trebuchet-ms-2" rel="stylesheet">
+    <!-- IMPORT LIBRARY -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+
+    <title>FAHRRAD</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <div class="header_container">
+                <img src="./image/Logo_white.png" alt="" class="logo">
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="#Verkauf">Verkauf</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#Werkstatt">Werkstatt</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#Lastenrad-Leasing">
+                            Lastenrad-Leasing
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#Kinderrad-Abo">Kinderrad-Abo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="carousel">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide carousel_item">
+                    <img src="./image/Bild_08.jpg" alt="">
+                </div>
+                <div class="swiper-slide carousel_item">
+                    <img src="./image/Bild_09.jpg" alt="">
+                </div>
+                <div class="swiper-slide carousel_item">
+                    <img src="./image/Bild_10.jpg" alt="">
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="overlay"></div>
+        <div class="text_area">
+            <p>
+                Zweirad für Einmalige <br>
+                Sie wollen ein Fahrrad für alle Tage, <br>
+                stadt- und landtauglich?
+            </p>
+            <button class="carousel_btn"> Mehr erfahren </button>
+        </div>
+    </section>
+    <section class="introduction">
+        <div class="wrap">
+            <h2>
+                Flotte Fahrt auf flotten Velos
+            </h2>
+            <p>Singles, Paare oder Familien, Sportbegeisterte, Umweltbewusste oder Naturliebhaber: Wir sind die
+                Zweirad-Spezialisten, die für alle etwas zu bieten haben. Ob Kauf oder Leasing, ob regelmäßige Wartung
+                oder punktuelle Beratung, sehen Sie sich unser Angebot an oder nehmen Sie Kontakt mit uns auf. Wir
+                sorgen für Mobilität, die Freude macht.
+            </p>
+        </div>
+    </section>
+
+    <section class="bodyItem" id="Verkauf">
+        <div class="item_desc item_verkauf">
+            <h2>
+                Zweirad für Einmalige
+
+            </h2>
+            <p>Sie wollen ein Fahrrad für alle Tage, stadt- und landtauglich? Sie möchten ausprobieren, wie sich Ihr
+                Bewegungsspielraum durch ein E-Rad vergrößert? Sie suchen die sportliche Herausforderung auf zwei
+                Rädern?
+            </p>
+            <p>Informieren Sie sich hier, welche Typen wir im Angebot haben. Und bedenken Sie: Jedes Rad kann auf Ihre
+                ganz individuellen Wünsche angepasst werden. Vereinbaren Sie einfach einen Beratungstermin</p>
+        </div>
+        <img src="./image/Bild_16.jpg" alt="" class="item_img">
+    </section>
+    <section class="bodyItem" id="Werkstatt">
+        <img src="./image/Bild_20.jpg" alt="" class="item_img">
+        <div class="item_desc item_werkstatt"></div>
+    </section>
+    <section class="bodyItem" id="Lastenrad-Leasing">
+        <div class="item_desc item_Lastenrad"></div>
+        <img src="./image/Bild_06.jpg" alt="" class="item_img">
+    </section>
+    <section class="bodyItem" id="Kinderrad-Abo">
+        <img src="./image/Bild_20.jpg" alt="" class="item_img">
+        <div class="item_desc item_Kinderrad"></div>
+
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./carouseConfig.js"></script>
+</body>
+
+</html>

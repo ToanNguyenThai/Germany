@@ -1,0 +1,49 @@
+.bodyItem {
+    width: 100%;
+    min-height: 630px;
+    display: flex;
+}
+
+.item_desc {
+    width: 50%;
+    padding: 100px 90px;
+}
+
+.item_desc h2 {
+    font-style: italic;
+
+    font-size: 32px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin: 0;
+    text-shadow: 1px 1px 4px #FFF;
+    font-weight: normal;
+}
+
+.item_desc p {
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: white;
+}
+
+.item_img {
+    width: 50%;
+}
+
+.item_verkauf {
+    background-color: rgb(91, 144, 89);
+}
+
+.item_werkstatt {
+    background-color: rgb(199, 82, 75);
+}
+
+.item_Lastenrad {
+    background-color: var(--main-orange);
+}
+
+.item_Kinderrad {
+    background-color: rgb(39, 44, 116);
+}

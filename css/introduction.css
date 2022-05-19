@@ -1,0 +1,26 @@
+.introduction {
+    width: 100%;
+    height: 200px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introduction h2 {
+    font-style: italic;
+
+    font-size: 32px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin: 0;
+    text-shadow: 1px 1px 4px #FFF;
+    font-weight: normal;
+}
+
+.introduction p {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: white;
+}
