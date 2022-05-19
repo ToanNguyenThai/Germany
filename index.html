@@ -17,9 +17,8 @@
     <link href="http://fonts.cdnfonts.com/css/trebuchet-ms-2" rel="stylesheet">
     <!-- IMPORT LIBRARY -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-
-
+    <!-- ANIMATION LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>FAHRRAD</title>
 </head>
 
@@ -80,7 +79,8 @@
 
         <div class="text_area">
             <p>
-                Zweirad für Einmalige <br>
+                Zweirad für Einmalige
+                <br>
                 Sie wollen ein Fahrrad für alle Tage, <br>
                 stadt- und landtauglich?
             </p>
@@ -88,7 +88,7 @@
         </div>
     </section>
 
-    <section class="introduction">
+    <section class="introduction" data-aos="fade-up">
         <div class="wrap">
             <h2>
                 Flotte Fahrt auf flotten Velos
@@ -101,7 +101,7 @@
         </div>
     </section>
 
-    <section class="bodyItem" id="Verkauf">
+    <section class="bodyItem" id="Verkauf" data-aos="fade-up">
         <div class="item_desc item_verkauf">
             <h2>
                 Zweirad für Einmalige
@@ -122,7 +122,7 @@
         </div>
         <img src="./image/Bild_16.jpg" alt="" class="item_img">
     </section>
-    <section class="bodyItem" id="Werkstatt">
+    <section class="bodyItem" id="Werkstatt" data-aos="fade-up">
         <img src="./image/Bild_20.jpg" alt="" class="item_img">
         <div class="item_desc item_werkstatt">
             <h2>
@@ -141,7 +141,7 @@
                 Termin vereinbaren</button>
         </div>
     </section>
-    <section class="bodyItem" id="Lastenrad-Leasing">
+    <section class="bodyItem" id="Lastenrad-Leasing" data-aos="zoom-in">
         <div class="item_desc item_Lastenrad">
             <h2>
                 Kaufen war gestern, <br>
@@ -159,7 +159,7 @@
         </div>
         <img src="./image/Bild_06.jpg" alt="" class="item_img">
     </section>
-    <section class="bodyItem" id="Kinderrad-Abo">
+    <section class="bodyItem" id="Kinderrad-Abo" data-aos="zoom-in-right">
         <img src="./image/Bild_20.jpg" alt="" class="item_img">
         <div class="item_desc item_Kinderrad">
             <h2>
@@ -183,7 +183,7 @@
 
     </section>
 
-    <section class="myForm">
+    <section class="myForm" data-aos="fade-up">
         <h2>Termin Vereinbaren</h2>
         <form class="wrap">
             <div class="form_left">
@@ -218,7 +218,7 @@
 
     </section>
 
-    <footer>
+    <footer class="">
         <div class="footer_container wrap">
             <div class="footer_item">
                 <h3>Service</h3>
@@ -267,6 +267,10 @@
     <!-- Carousel script -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./carouseConfig.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
