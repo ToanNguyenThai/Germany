@@ -77,7 +77,7 @@
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
         </div>
-        <div class="overlay"></div>
+
         <div class="text_area">
             <p>
                 Zweirad für Einmalige <br>
@@ -87,6 +87,7 @@
             <button class="carousel_btn"> Mehr erfahren </button>
         </div>
     </section>
+
     <section class="introduction">
         <div class="wrap">
             <h2>
@@ -112,23 +113,120 @@
             </p>
             <p>Informieren Sie sich hier, welche Typen wir im Angebot haben. Und bedenken Sie: Jedes Rad kann auf Ihre
                 ganz individuellen Wünsche angepasst werden. Vereinbaren Sie einfach einen Beratungstermin</p>
+            <button style="background-color: #c7524b" class="item_btn">
+                Termin vereinbaren</button>
+            <p class="item_footer">
+                Mountainbike Rennrad Tourenrad/City-Bike E-Bike/Pedelec <br>
+                Kinder-/Jugendrad Lastenrad Faltrad
+            </p>
         </div>
         <img src="./image/Bild_16.jpg" alt="" class="item_img">
     </section>
     <section class="bodyItem" id="Werkstatt">
         <img src="./image/Bild_20.jpg" alt="" class="item_img">
-        <div class="item_desc item_werkstatt"></div>
+        <div class="item_desc item_werkstatt">
+            <h2>
+                Damit das Rad rund läuft
+
+            </h2>
+            <p>Lassen Sie uns regelmäßig alle Funktionen Ihres Fahrrads überprüfen.
+                So sind Sie sicher und lange mit Ihrem Drahtesel unterwegs. Oder
+                kontaktieren Sie uns, wenn Sie eigenartige Laufgeräusche
+                wahrnehmen, wenn die Bremsen nicht mehr richtig greifen, wenn Sie
+                einen Radunfall hatten. Und kommen Sie auch dann zu uns, wenn Sie
+                einen speziellen Sattel oder eine für Sie passende Lenkstange suchen.
+            </p>
+            <p>Der erste Schritt: Vereinbaren Sie online einen Termin:</p>
+            <button style="background-color: #579460" class="item_btn">
+                Termin vereinbaren</button>
+        </div>
     </section>
     <section class="bodyItem" id="Lastenrad-Leasing">
-        <div class="item_desc item_Lastenrad"></div>
+        <div class="item_desc item_Lastenrad">
+            <h2>
+                Kaufen war gestern, <br>
+                jetzt ist leasen angesagt
+
+            </h2>
+            <p>Das Angebot richtet sich sowohl an Handwerker, die ohne Parkplatzprobleme
+                ihre Kundschaft bedienen wollen, als auch an alle anderen Mittelständler, für
+                die ein Lastenrad das umweltfreundliche Transportmittel der Wahl ist. Wir
+                werden gemeinsam eine gute Lösung für Sie finden. Fragen Sie einfach nach!
+            </p>
+            <button style="background-color: #272c74" class="item_btn">
+                Termin vereinbaren</button>
+
+        </div>
         <img src="./image/Bild_06.jpg" alt="" class="item_img">
     </section>
     <section class="bodyItem" id="Kinderrad-Abo">
         <img src="./image/Bild_20.jpg" alt="" class="item_img">
-        <div class="item_desc item_Kinderrad"></div>
+        <div class="item_desc item_Kinderrad">
+            <h2>
+                Wenn das Fahrrad mitwächst
+
+            </h2>
+            <p>Auf vielfachen Kundenwunsch bieten wir das Kinderrad-Abo an.
+                So funktioniert es: Sie suchen für Ihr Kind bei uns ein passendes
+                (Lauf)-Rad aus und bezahlen monatlich eine Abo-Gebühr dafür.
+                Immer dann, wenn Tochter oder Sohn ein größeres Rad brauchen,
+                tauschen wir es einfach aus. Regelmäßige Reparatur und Wartung
+                der kleinen Flitzer sind im Preis inbegriffen. Lassen Sie sich über
+                die Details beraten! Vereinbaren Sie gleich hier
+            </p>
+            <button style="background-color: #bd4616" class="item_btn">
+                Termin vereinbaren</button>
+            <p class="item_footer">
+                einen Beratungstermin oder rufen Sie uns an: 010/56789-10.
+            </p>
+        </div>
 
     </section>
 
+    <section class="myForm">
+        <h2>Termin Vereinbaren</h2>
+        <form class="wrap">
+            <div class="form_left">
+                <div class="form_field">
+                    <label for="name">Name und Vorname</label>
+                    <input type="text" id='name' />
+                </div>
+                <div class="form_field">
+                    <label for="phone">Telefonnummer</label>
+                    <input type="text" id='phone' />
+                </div>
+                <div class="form_field">
+                    <label for="email">Email Adresse</label>
+                    <input type="text" id='email' />
+                </div>
+            </div>
+            <div class="form_right">
+                <div class="form_field">
+                    <label for="Termin">Termin Datum</label>
+                    <input type="text" id='Termin' />
+                </div>
+                <div class="form_field">
+                    <label for="Nachricht">Nachricht</label>
+                    <textarea id="Nachricht" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </form>
+        <button style="background-color: #bd4616"">
+            absenden
+        </button>
+        <div class=" overlay"></div>
+
+    </section>
+
+    <footer>
+        <div class="footer_container wrap">
+            <div class="footer_item">Service</div>
+            <div class="footer_item">Kontakt</div>
+            <div class="footer_item">Öffnungszeiten:</div>
+            <div class="footer_item">Impressum</div>
+        </div>
+    </footer>
+    <!-- Carousel script -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./carouseConfig.js"></script>
 </body>

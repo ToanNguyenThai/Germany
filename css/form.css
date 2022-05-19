@@ -1,0 +1,99 @@
+.myForm {
+    width: 100%;
+    height: 550px;
+    background-image: url('../image/Bild_23.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(77, 77, 77);
+    opacity: 0.5;
+}
+
+.myForm h2 {
+    z-index: 99999;
+    position: absolute;
+    font-style: italic;
+    font-size: 32px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin: 0;
+    text-shadow: 1px 1px 2px #FFF;
+    font-weight: normal;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.myForm form {
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form_field {
+    margin-top: 20px;
+}
+
+.myForm label {
+    display: block;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #ebeced;
+    padding-bottom: 10px;
+}
+
+.form_left,
+.form_right {
+    width: 45%;
+}
+
+.myForm input {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 45px;
+    background-color: #bababa;
+    padding-left: 10px;
+}
+
+.myForm textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #bababa;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.myForm button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    z-index: 99;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 130px;
+    height: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
