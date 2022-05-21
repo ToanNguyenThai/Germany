@@ -14,16 +14,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .logo {
-    max-width: 152px;
-    height: 80px;
+    max-width: 100px;
+    height: 50px;
 }
 
 .navList {
     display: flex;
     list-style: none;
+    display: none;
 }
 
 .navItem a {
@@ -32,4 +34,94 @@ header {
     font-size: 20px;
     padding-left: 50px;
     text-decoration: none;
+}
+
+.myIcon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+}
+
+
+
+.show {
+
+    z-index: 999999999999;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: var(--main-color);
+    box-shadow: 0 10px 10px #e0e4e6;
+}
+
+.show a {
+    display: block;
+    cursor: pointer;
+    padding-left: 30px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+    line-height: 100%;
+    color: white;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    transition: all linear 0.3s;
+
+}
+
+
+@media (min-width: 1280px) {
+
+    /*     header {
+        width: 100%;
+        height: 100px;
+        background-color: var(--main-color);
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+    }
+ */
+    .header_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 152px;
+        height: 80px;
+    }
+
+    .navList {
+        display: flex;
+        list-style: none;
+    }
+
+    .navItem a {
+        color: white;
+        font-family: 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        padding-left: 50px;
+        text-decoration: none;
+    }
+
+    .myIcon {
+        display: none !important;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+    }
+
+    .mobile-list {
+        display: none;
+    }
 }

@@ -1,19 +1,21 @@
 .bodyItem {
     width: 100%;
-    min-height: 630px;
-    display: flex;
+    min-height: 150px;
+    display: block;
+
 }
 
 .item_desc {
-    width: 50%;
-    padding: 50px 130px;
-
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .item_desc h2 {
     font-style: italic;
 
-    font-size: 32px;
+    font-size: 20px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
@@ -23,16 +25,17 @@
 }
 
 .item_desc p {
-    margin-top: 50px;
+    margin-top: 20px;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 17px;
+    font-size: 12px;
     color: white;
-    line-height: 35px;
+    line-height: 25px;
+    text-align: center;
     /*  padding-left: 40px; */
 }
 
 .item_img {
-    width: 50%;
+    width: 100%;
 }
 
 .item_btn {
@@ -46,6 +49,8 @@
     font-size: 17px;
     margin-top: 20px;
     cursor: pointer;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .item_footer {
@@ -56,14 +61,79 @@
     background-color: rgb(91, 144, 89);
 }
 
-.item_werkstatt {
-    background-color: rgb(199, 82, 75);
-}
+
 
 .item_Lastenrad {
     background-color: var(--main-orange);
 }
 
+.item_werkstatt {
+    background-color: rgb(199, 82, 75);
+    transform: translateY(-10px);
+}
+
 .item_Kinderrad {
     background-color: rgb(39, 44, 116);
+    transform: translateY(-5px);
+}
+
+#Werkstatt {
+    transform: translateY(-10px);
+}
+
+#Lastenrad-Leasing {
+    transform: translateY(-20px);
+}
+
+#Kinderrad-Abo {
+    transform: translateY(-25px);
+}
+
+
+@media (min-width: 1280px) {
+    .bodyItem {
+        width: 100%;
+        min-height: 630px;
+        display: flex;
+
+    }
+
+    .item_desc {
+        width: 50%;
+        padding: 50px 130px;
+        display: block;
+    }
+
+    .item_desc h2 {
+
+
+        font-size: 32px;
+
+    }
+
+    .item_desc p {
+        margin-top: 50px;
+        font-size: 17px;
+        padding: 0;
+        text-align: unset;
+    }
+
+    .item_img {
+        width: 50%;
+    }
+
+    .item_btn {
+
+        margin-top: 0px;
+    }
+
+    .item_werkstatt,
+    .item_Kinderrad,
+    #Werkstatt,
+    #Lastenrad-Leasing,
+    #Kinderrad-Abo {
+
+        transform: unset;
+    }
+
 }

@@ -6,39 +6,25 @@
 
 .carousel_item img {
     width: 100%;
-    height: 800px;
+    height: 300px;
 }
 
 .text_area {
     z-index: 999;
     position: absolute;
     top: 50%;
-    left: 28%;
+    left: 45%;
     transform: translate(-50%, -50%);
 }
 
 .text_area p {
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 35px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 1px;
     color: white;
-    /*    animation:
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite; */
-}
 
-/* @keyframes typing {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-        filter: blur(0);
-    }
 }
- */
 
 
 
@@ -47,11 +33,57 @@
     outline: none;
     border: none;
     background-color: var(--main-orange);
-    border-radius: 20px;
-    width: 300px;
-    height: 70px;
+    border-radius: 15px;
+    width: 150px;
+    height: 30px;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 35px;
+    font-size: 15px;
     font-weight: 600;
     color: white;
+}
+
+@media (min-width: 1280px) {
+    .carousel {
+        width: 100%;
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .carousel_item img {
+        width: 100%;
+        height: 800px;
+    }
+
+    .text_area {
+        z-index: 999;
+        position: absolute;
+        top: 50%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+    }
+
+    .text_area p {
+        font-family: 'Trebuchet MS', sans-serif;
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: white;
+
+    }
+
+
+
+    .carousel_btn {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background-color: var(--main-orange);
+        border-radius: 20px;
+        width: 300px;
+        height: 70px;
+        font-family: 'Trebuchet MS', sans-serif;
+        font-size: 35px;
+        font-weight: 600;
+        color: white;
+    }
 }
