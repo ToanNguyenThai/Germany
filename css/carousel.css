@@ -6,15 +6,16 @@
 
 .carousel_item img {
     width: 100%;
-    height: 300px;
+    height: auto;
 }
 
 .text_area {
     z-index: 999;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 45%;
     transform: translate(-50%, -50%);
+
 }
 
 .text_area p {
@@ -23,12 +24,13 @@
     font-weight: 600;
     letter-spacing: 1px;
     color: white;
+    overflow: hidden;
 
 }
 
 
-
 .carousel_btn {
+
     cursor: pointer;
     outline: none;
     border: none;
@@ -37,7 +39,7 @@
     width: 150px;
     height: 30px;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     color: white;
 }
@@ -51,7 +53,7 @@
 
     .carousel_item img {
         width: 100%;
-        height: 800px;
+        height: auto;
     }
 
     .text_area {
@@ -71,9 +73,8 @@
 
     }
 
-
-
     .carousel_btn {
+
         cursor: pointer;
         outline: none;
         border: none;

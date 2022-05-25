@@ -1,6 +1,6 @@
 .myForm {
     width: 100%;
-    height: 550px;
+    height: 750px;
     background-image: url('../image/Bild_23.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,15 +10,7 @@
     top: -30px;
 }
 
-.overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgb(77, 77, 77);
-    opacity: 0.5;
-}
+
 
 .myForm h2 {
     z-index: 99999;
@@ -31,7 +23,7 @@
     margin: 0;
     text-shadow: 1px 1px 2px #FFF;
     font-weight: normal;
-    top: 15%;
+    top: 7%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -39,7 +31,9 @@
 .myForm form {
     z-index: 99;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -59,7 +53,7 @@
 
 .form_left,
 .form_right {
-    width: 45%;
+    width: 100%;
 }
 
 .myForm input {
@@ -67,7 +61,7 @@
     outline: none;
     border-radius: 10px;
     width: 100%;
-    height: 30px;
+    height: 35px;
     background-color: #bababa;
     padding-left: 10px;
 }
@@ -89,7 +83,7 @@
     border-radius: 10px;
     z-index: 99;
     position: absolute;
-    top: 90%;
+    top: 94%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -113,15 +107,7 @@
         top: 0px;
     }
 
-    .overlay {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgb(77, 77, 77);
-        opacity: 0.5;
-    }
+
 
     .myForm h2 {
         z-index: 99999;
@@ -142,6 +128,7 @@
     .myForm form {
         z-index: 99;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         position: absolute;
         top: 50%;

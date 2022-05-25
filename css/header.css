@@ -8,6 +8,7 @@ header {
     top: 0;
     left: 0;
     z-index: 99999;
+
 }
 
 .header_container {
@@ -28,13 +29,24 @@ header {
     display: none;
 }
 
-.navItem a {
+.navItem {
+    padding-left: 50px;
+}
+
+.navItem i {
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.nav .navItem a {
     color: white;
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    padding-left: 50px;
     text-decoration: none;
 }
+
+
 
 .myIcon {
     display: none;
@@ -46,16 +58,15 @@ header {
 
 
 .show {
-
     z-index: 999999999999;
     position: fixed;
     top: 100px;
     left: 0;
     right: 0;
     bottom: 0;
-
     background-color: var(--main-color);
-    box-shadow: 0 10px 10px #e0e4e6;
+    opacity: 0.9;
+
 }
 
 .show a {
@@ -64,7 +75,7 @@ header {
     padding-left: 30px;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 5px;
     line-height: 100%;
     color: white;
@@ -106,12 +117,25 @@ header {
         list-style: none;
     }
 
+    .navItem {
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .navItem a {
         color: white;
         font-family: 'Trebuchet MS', sans-serif;
         font-size: 20px;
-        padding-left: 50px;
         text-decoration: none;
+        padding-top: 5px;
+    }
+
+    .navIcon {
+        max-width: 50px;
+        max-height: 20px;
+        filter: invert(100%) sepia(86%) saturate(0%) hue-rotate(42deg) brightness(102%) contrast(101%);
     }
 
     .myIcon {

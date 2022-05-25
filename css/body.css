@@ -1,8 +1,8 @@
 .bodyItem {
     width: 100%;
     min-height: 150px;
-    display: block;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .item_desc {
@@ -77,12 +77,19 @@
     transform: translateY(-5px);
 }
 
+
+#Verkauf {
+    flex-direction: column-reverse;
+}
+
 #Werkstatt {
     transform: translateY(-10px);
+
 }
 
 #Lastenrad-Leasing {
     transform: translateY(-20px);
+    flex-direction: column-reverse;
 }
 
 #Kinderrad-Abo {
@@ -95,20 +102,18 @@
         width: 100%;
         min-height: 630px;
         display: flex;
-
+        flex-direction: row;
     }
 
     .item_desc {
         width: 50%;
         padding: 50px 130px;
         display: block;
+        padding-left: 9%;
     }
 
     .item_desc h2 {
-
-
         font-size: 32px;
-
     }
 
     .item_desc p {
@@ -134,6 +139,11 @@
     #Kinderrad-Abo {
 
         transform: unset;
+    }
+
+    #Verkauf,
+    #Lastenrad-Leasing {
+        flex-direction: row;
     }
 
 }

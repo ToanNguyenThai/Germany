@@ -46,8 +46,8 @@ body {
 }
 
 .swiper-pagination-bullet {
-    width: 15px !important;
-    height: 15px !important;
+    width: 8px !important;
+    height: 8px !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -61,11 +61,44 @@ body {
     padding: 0 10px;
 }
 
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(77, 77, 77);
+    opacity: 0.5;
+}
 
 @media (min-width: 1280px) {
     .wrap {
         width: 100%;
         max-width: 1280px;
         padding: 0;
+    }
+
+    .swiper-button-prev {
+
+        z-index: 9999;
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent !important;
+        border-bottom: 25px solid transparent !important;
+        border-right: 25px solid rgba(255, 255, 255, 0.5) !important;
+    }
+
+    .swiper-button-next {
+        z-index: 9999;
+        width: 0 !important;
+        height: 0 !important;
+        border-top: 25px solid transparent !important;
+        border-bottom: 25px solid transparent !important;
+        border-left: 25px solid rgba(255, 255, 255, 0.5) !important;
+    }
+
+    .swiper-pagination-bullet {
+        width: 15px !important;
+        height: 15px !important;
     }
 }
