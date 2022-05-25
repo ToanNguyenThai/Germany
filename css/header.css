@@ -119,9 +119,7 @@ header {
 
     .navItem {
         padding-left: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
     }
 
     .navItem a {
@@ -129,10 +127,18 @@ header {
         font-family: 'Trebuchet MS', sans-serif;
         font-size: 20px;
         text-decoration: none;
-        padding-top: 5px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navItem span {
+        padding-top: 10px;
     }
 
     .navIcon {
+        display: block;
         max-width: 50px;
         max-height: 20px;
         filter: invert(100%) sepia(86%) saturate(0%) hue-rotate(42deg) brightness(102%) contrast(101%);
@@ -147,5 +153,40 @@ header {
 
     .mobile-list {
         display: none;
+    }
+
+    .item1:hover .Verkauf {
+        color: #5b9059;
+    }
+
+    .item1:hover .navIcon {
+        filter: invert(49%) sepia(33%) saturate(521%) hue-rotate(70deg) brightness(96%) contrast(85%);
+    }
+
+    .item2:hover .Werkstatt {
+        color: #c7524b;
+    }
+
+    .item2:hover .navIcon {
+        filter: invert(55%) sepia(7%) saturate(4657%) hue-rotate(314deg) brightness(78%) contrast(101%);
+    }
+
+    .item3:hover .Lastenrad {
+        color: #ec571b;
+    }
+
+    .item3:hover .navIcon {
+        filter: invert(43%) sepia(36%) saturate(5957%) hue-rotate(354deg) brightness(98%) contrast(88%);
+
+    }
+
+    .item4:hover .Kinderrad {
+        color: #272c74;
+    }
+
+    .item4:hover .navIcon {
+        filter: invert(26%) sepia(22%) saturate(1726%) hue-rotate(197deg) brightness(80%) contrast(107%);
+
+
     }
 }
