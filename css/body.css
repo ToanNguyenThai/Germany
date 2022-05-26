@@ -100,7 +100,7 @@
 @media (min-width: 1280px) {
     .bodyItem {
         width: 100%;
-        min-height: 630px;
+
         display: flex;
         flex-direction: row;
     }
@@ -110,6 +110,7 @@
         padding: 50px 130px;
         display: block;
         padding-left: 9%;
+
     }
 
     .item_desc h2 {
@@ -124,7 +125,8 @@
     }
 
     .item_img {
-        width: 50%;
+        max-width: 50%;
+
     }
 
     .item_btn {
@@ -145,5 +147,6 @@
     #Lastenrad-Leasing {
         flex-direction: row;
     }
+
 
 }

@@ -38,21 +38,21 @@
                 <ul class="navList">
                     <li class="navItem item1">
 
-                        <a href="#Verkauf">
+                        <a onclick="myScroll(1250)">
                             <img class="navIcon" src="./image/Verkauf.svg" alt="">
                             <span class="Verkauf">Verkauf</span>
                         </a>
                     </li>
                     <li class="navItem item2">
 
-                        <a href="#Werkstatt">
+                        <a onclick="myScroll(1840)">
                             <img class="navIcon" src="./image/Werkstatt.svg" alt="">
                             <span class="Werkstatt">Werkstatt</span>
                         </a>
                     </li>
                     <li class="navItem item3">
 
-                        <a href="#Lastenrad-Leasing">
+                        <a onclick="myScroll(2370)">
                             <img class="navIcon" src="./image/Leasing.svg" alt="">
                             <span class="Lastenrad"> Lastenrad-Leasing</span>
 
@@ -60,7 +60,7 @@
                     </li>
                     <li class="navItem item4">
 
-                        <a href="#Kinderrad-Abo">
+                        <a onclick="myScroll(2860)">
                             <img class="navIcon" src="./image/KinderAbo.svg" alt="">
                             <span class="Kinderrad"> Kinderrad-Abo</span>
 
@@ -185,8 +185,11 @@
             </p>
             <p>Informieren Sie sich hier, welche Typen wir im Angebot haben. Und bedenken Sie: Jedes Rad kann auf Ihre
                 ganz individuellen Wünsche angepasst werden. Vereinbaren Sie einfach einen Beratungstermin</p>
-            <button style="background-color: #c7524b" class="item_btn">
+
+            <button onclick="myScroll(3400)" style="background-color: #c7524b" class="item_btn">
                 Termin vereinbaren</button>
+
+
             <p class="item_footer">
                 Mountainbike Rennrad Tourenrad/City-Bike E-Bike/Pedelec <br>
                 Kinder-/Jugendrad Lastenrad Faltrad
@@ -209,8 +212,11 @@
                 einen speziellen Sattel oder eine für Sie passende Lenkstange suchen.
             </p>
             <p>Der erste Schritt: Vereinbaren Sie online einen Termin:</p>
-            <button style="background-color: #579460" class="item_btn">
+
+            <button onclick="myScroll(3400)" style="background-color: #579460" class="item_btn">
                 Termin vereinbaren</button>
+
+
         </div>
     </section>
     <section class="bodyItem" id="Lastenrad-Leasing" data-aos="zoom-in">
@@ -225,8 +231,11 @@
                 die ein Lastenrad das umweltfreundliche Transportmittel der Wahl ist. Wir
                 werden gemeinsam eine gute Lösung für Sie finden. Fragen Sie einfach nach!
             </p>
-            <button style="background-color: #272c74" class="item_btn">
+
+
+            <button onclick="myScroll(3400)" style="background-color: #272c74" class="item_btn">
                 Termin vereinbaren</button>
+
 
         </div>
         <img src="./image/Bild_06.jpg" alt="" class="item_img">
@@ -246,8 +255,11 @@
                 der kleinen Flitzer sind im Preis inbegriffen. Lassen Sie sich über
                 die Details beraten! Vereinbaren Sie gleich hier
             </p>
-            <button style="background-color: #bd4616" class="item_btn">
+
+
+            <button onclick="myScroll(3400)" style="background-color: #bd4616" class="item_btn">
                 Termin vereinbaren</button>
+
             <p class="item_footer">
                 einen Beratungstermin oder rufen Sie uns an: 010/56789-10.
             </p>
@@ -255,7 +267,7 @@
 
     </section>
 
-    <section class="myForm" data-aos="fade-up">
+    <section id="myForm" class="myForm" data-aos="fade-up">
         <h2>Termin Vereinbaren</h2>
         <form class="wrap">
             <div class="form_left">
@@ -338,12 +350,12 @@
     </footer>
 
     <div class="mobile-list">
-        <a href="#Verkauf">Verkauf</a>
-        <a href="#Werkstatt">Werkstatt</a>
-        <a href="#Lastenrad-Leasing">
+        <a id="mobile-list-item1" href="#Verkauf">Verkauf</a>
+        <a id="mobile-list-item2" href="#Werkstatt">Werkstatt</a>
+        <a id="mobile-list-item3" href="#Lastenrad-Leasing">
             Lastenrad-Leasing
         </a>
-        <a href="#Kinderrad-Abo">Kinderrad-Abo
+        <a id="mobile-list-item4" href="#Kinderrad-Abo">Kinderrad-Abo
         </a>
     </div>
     <!-- Carousel script -->
@@ -355,18 +367,8 @@
         AOS.init();
     </script>
     <!-- Onclick to show mobile list -->
-    <script>
-        var barIcon = document.querySelector('.myIcon')
-        var mobileList = document.querySelector('.mobile-list')
 
-        barIcon.onclick = function () {
-            if (mobileList.classList.contains("show")) {
-                mobileList.classList.remove("show")
-            } else {
-                mobileList.classList.add("show")
-            }
-        }   
-    </script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
