@@ -71,6 +71,9 @@ window.addEventListener("scroll", function () {
 }, false);
 /* on scroll to specific pixel */
 function myScroll(pixel) {
-
-    document.documentElement.scrollTop = pixel;
-}
+    var w = window.innerWidth
+    if (w > 1280) {
+        document.documentElement.scrollTop = pixel;
+    }
+    else return
+}   
