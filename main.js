@@ -45,13 +45,13 @@ mobileItem4.onclick = function () {
     }
 }
 
+/* Reduce header size on desktop */
 const header = document.querySelector('header')
 const logo = document.querySelector('.logo')
 
-
-
 window.addEventListener("scroll", function () {
     var w = window.innerWidth
+
     if (w > 1280) {
         var top = this.scrollY
 
@@ -69,11 +69,12 @@ window.addEventListener("scroll", function () {
 
 
 }, false);
-/* on scroll to specific pixel */
-function myScroll(pixel) {
+
+/* scroll to specific pixel */
+function myScroll(pixel_onDesktop, pixel_onMobile) {
     var w = window.innerWidth
     if (w > 1280) {
-        document.documentElement.scrollTop = pixel;
+        document.documentElement.scrollTop = pixel_onDesktop
     }
-    else return
+    else document.documentElement.scrollTop = pixel_onMobile
 }   
