@@ -98,6 +98,11 @@
     transform: translateY(-25px);
 }
 
+.item_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 @media (min-width: 1280px) {
     .bodyItem {
@@ -149,10 +154,9 @@
     }
 
     .item_img {
-        /* width: auto; */
-        /* PERMISSION */
+
         max-width: 50%;
-        height: 100%;
+        height: 521px;
         position: absolute;
         top: 0;
     }
@@ -165,6 +169,11 @@
         right: 0;
     }
 
+    /*  .item_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } */
 
     .item_btn {
 
